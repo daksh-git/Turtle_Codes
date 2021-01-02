@@ -15,12 +15,9 @@ def draw_dials():
         bob.fd(100)
         bob.pd()
         bob.fd(50)
-        bob.pu()
-        bob.fd(20)
-        bob.pd()
         bob.write(str(i + 1), align='center', font=("Ariel", 12, "bold"))
         bob.pu()
-        bob.bk(170)
+        bob.bk(150)
         bob.rt(30)
 
 
@@ -28,10 +25,10 @@ def draw_ring():
     bob.color('#f4a261')
     bob.rt(150)
     bob.pu()
-    bob.fd(190)
+    bob.fd(180)
     bob.pd()
     bob.setheading(0)
-    bob.circle(190)
+    bob.circle(180)
 
 
 draw_dials()
