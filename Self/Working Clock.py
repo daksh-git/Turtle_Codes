@@ -68,6 +68,5 @@ while True:
     sec = int(time.strftime("%S"))
     draw_dials(hr, mi, sec)
     screen.update()
-    time.sleep(1)
     screen.tracer(0)
     bob.clear()
