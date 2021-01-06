@@ -35,8 +35,8 @@ def draw_dials(hour_rn, min_rn, sec_rn):
     bob.goto(0, 0)
     bob.color('white')
     bob.setheading(90)
-    angle = (hour_rn / 12) * 360
-    bob.rt(angle)
+    angle_hr = (hour_rn / 12) * 360
+    bob.rt(angle_hr)
     bob.pd()
     bob.fd(100)
 
@@ -45,8 +45,8 @@ def draw_dials(hour_rn, min_rn, sec_rn):
     bob.goto(0, 0)
     bob.color('blue')
     bob.setheading(90)
-    angle = (min_rn / 60) * 360
-    bob.rt(angle)
+    angle_min = (min_rn / 60) * 360
+    bob.rt(angle_min)
     bob.pd()
     bob.fd(200)
 
@@ -55,8 +55,8 @@ def draw_dials(hour_rn, min_rn, sec_rn):
     bob.goto(0, 0)
     bob.color('yellow')
     bob.setheading(90)
-    angle = (sec_rn / 60) * 360
-    bob.rt(angle)
+    angle_sec = (sec_rn / 60) * 360
+    bob.rt(angle_sec)
     bob.pd()
     bob.fd(170)
     bob.goto(0, 0)
